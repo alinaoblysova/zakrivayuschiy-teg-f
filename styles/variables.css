@@ -1,1 +1,34 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font-family: 'Inter', sans-serif;
+  --accent-font-family: 'Press Start 2P', monospace;
+  --main-font-size: 18px;
+  --accent-font-size: 14px;
+  --text-font-weight: 400;
+  --title-font-weight: 700;
+  --text-color: #000;
+  --background-color: #fff;
+  --background-gradient-stripe-color: #d3d3d3;
+  --background-gradient-start-color: #e7e7e7;
+  --background-gradient-end-color: #1a1a1a;
+  --component-border: 2px solid var(--text-color);
+  --component-padding: 25px;
+
+  --background-gradient: 
+    repeating-linear-gradient(
+      90deg,
+      var(--background-gradient-stripe-color) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      var(--background-gradient-stripe-color) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      180deg,
+      var(--background-gradient-start-color) 0.01%,
+      var(--background-gradient-end-color) 100%
+    );
+}
