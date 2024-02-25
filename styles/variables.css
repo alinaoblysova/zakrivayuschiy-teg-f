@@ -7,11 +7,16 @@
   --accent-font-size: 14px;
   --text-font-weight: 400;
   --title-font-weight: 700;
+
   --text-color: #000;
+  --hover-button-text-color: #fff;
+
   --background-color: #fff;
   --background-gradient-stripe-color: #d3d3d3;
   --background-gradient-start-color: #e7e7e7;
   --background-gradient-end-color: #1a1a1a;
+  
+  --component-max-inline-size: 700px;
   --component-border: 2px solid var(--text-color);
   --component-padding: 25px;
 
