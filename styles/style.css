@@ -132,7 +132,7 @@
 
 .card__title {
   border-block-end: var(--component-border);
-  padding: 4px 10px 6px 10px;
+  padding: 3px 10px;
   font-size: inherit;
   font-variation-settings: 'wght' var(--title-font-weight);
 }
