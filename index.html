@@ -294,13 +294,11 @@
         </svg>
         <h3 class="dialog__content-title">Вставьте дискету, чтобы продолжить</h3>
       </div>
-      <button 
-        class="dialog__button button" 
-        type="button" 
-        onclick="window['dialog'].close()"
-      >
-        <span class="button__text">Ок</span>
-      </button>
+      <form method="dialog">
+        <button class="dialog__button button" >
+          <span class="button__text">Ок</span>
+        </button>
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
