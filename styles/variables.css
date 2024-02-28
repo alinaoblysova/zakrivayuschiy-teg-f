@@ -15,6 +15,8 @@
   --background-gradient-stripe-color: #d3d3d3;
   --background-gradient-start-color: #e7e7e7;
   --background-gradient-end-color: #1a1a1a;
+
+  --like-icon-color: #ff0000;
   
   --component-max-inline-size: 700px;
   --component-border: 2px solid var(--text-color);
