@@ -150,7 +150,6 @@
   opacity: 0.5;
   font-family: var(--accent-font-family);
   font-size: var(--accent-font-size);
-  text-transform: uppercase;
   text-shadow: 
     -1px -1px 0 var(--background-color), 
     1px -1px 0 var(--background-color),
@@ -196,13 +195,13 @@
   align-items: end;
   inline-size: 39px;
   block-size: 38px;
-  border: var(--component-border);
-  border-color: transparent;
-  transition: border 0.3s ease;
+  border: none;
+  transition: outline 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
-  border: var(--component-border);
+  outline: var(--component-border);
+  outline-offset: -2px;
 }
 
 .card__like-button {
