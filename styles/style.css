@@ -74,6 +74,7 @@
 }
 
 .theme-menu__button:disabled {
+  opacity: 0.6;
   pointer-events: none;
 }
 
@@ -85,16 +86,13 @@
   animation: disabled-button-animation 0.5s ease-in-out infinite alternate;
 }
 
-.theme-menu__button:disabled,
-.theme-menu__button:hover,
-.theme-menu__button:focus {
+.theme-menu__button:hover {
   opacity: 0.6;
 }
 
-.theme-menu__button:focus,
-.card__icon-button:focus,
-.button:focus {
+.theme-menu__button:focus {
   outline: none;
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
@@ -199,6 +197,10 @@
   transition: outline 0.3s ease;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
 .card__icon-button:focus-visible {
   outline: var(--component-border);
   outline-offset: -2px;
@@ -235,12 +237,15 @@
   transform: scaleX(1);
 }
 
+.button:focus {
+  outline: none;
+}
+
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--text-color);
 }
 
-.button__text,
-.save-button__icon {
+.button__text {
   color: var(--hover-button-text-color);
   mix-blend-mode: difference;
 }
@@ -262,6 +267,8 @@
 .save-button__icon {
   max-inline-size: 21px;
   max-block-size: 21px;
+  color: var(--hover-button-text-color);
+  mix-blend-mode: difference;
 }
 
 .dialog[open] {
